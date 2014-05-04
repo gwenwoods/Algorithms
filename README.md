@@ -1,3 +1,3 @@
-SingularValueDecompositon
+svd_rbm_bp
 =========================
-CPP code for Singular Value Decomposition. Recommendation System. Customer Behavior Analysis.
+Singular Value Decomposition. Restricted Boltzmann Machine. Backprop NeuralNetwork.
