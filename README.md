@@ -5,4 +5,4 @@ Singular Value Decomposition. Backprop NeuralNetwork. Restricted Boltzmann Machi
 
 svd_cpp
 =========================
-Standalone Singular Value Decomposition code.
+Stand alone Singular Value Decomposition code.
