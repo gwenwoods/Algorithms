@@ -1,0 +1,18 @@
+all: RBM_RUN
+
+RBM_RUN: RBM_main.o abstractAlgorithm.o rbm.o
+	g++ -O3 RBM_main.o abstractAlgorithm.o rbm.o -o RBM_RUN -lm
+
+RBM_main.o: RBM_main.cpp
+	g++ -c RBM_main.cpp
+
+abstractAlgorithm.o: abstractAlgorithm.cpp
+	g++ -c abstractAlgorithm.cpp
+
+
+rbm.o: rbm.cpp
+	g++ -c rbm.cpp
+
+clean:
+	rm -rf *o RBM_RUN
+

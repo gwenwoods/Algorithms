@@ -1,0 +1,18 @@
+all: BP_RUN
+
+BP_RUN: BP_main.o abstractAlgorithm.o bp.o
+	g++ -O3 BP_main.o abstractAlgorithm.o bp.o -o BP_RUN -lm
+
+BP_main.o: BP_main.cpp
+	g++ -c BP_main.cpp
+
+abstractAlgorithm.o: abstractAlgorithm.cpp
+	g++ -c abstractAlgorithm.cpp
+
+
+bp.o: bp.cpp
+	g++ -c bp.cpp
+
+clean:
+	rm -rf *o BP_RUN
+
